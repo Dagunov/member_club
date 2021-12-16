@@ -70,6 +70,6 @@
 
   3. Now you can run this command to run all tests:
 
-          py manage.py test
+        py manage.py test
 
   3. To view tests, locate *tests.py* file in the *page* folder.
