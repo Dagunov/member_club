@@ -1,0 +1,1 @@
+web: gunicorn member_club.wsgi

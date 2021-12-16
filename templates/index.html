@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Member club{% endblock %}
+{% block content %}
+<h1>Welcome to the Club!</h1>
+<div id="form_container">
+	<form action="/" method="post" id="form">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<div id="form_buttons">
+			<input type="submit" value="Add">
+			<input type="reset" value="Clear">
+		</div>
+	</form>
+</div>
+<h3>Members</h3>
+<table id="table">
+	<tr id="info_row">
+		<td id="first_col">#</td>
+		<td id="second_col">Name</td>
+		<td id="third_col">Email</td>
+		<td id="fourth_col">Registration date</td>
+	</tr>
+	{% for member in members %}
+	<tr>
+		<td>{{ member.id }}</td>
+		<td>{{ member.name }}</td>
+		<td>{{ member.email }}</td>
+		<td>{{ member.date }}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}

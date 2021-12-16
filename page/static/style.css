@@ -1,0 +1,54 @@
+h1, h6{
+	text-align: center;
+}
+
+#form{
+	width: 300px;
+}
+
+#form > * label{
+	width: 20%;
+}
+
+#form > * input{
+	width: 80%;
+}
+
+#form_buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#form_buttons > input{
+	width: 20%;
+}
+
+#table{
+	width: 100%;
+	border: 2px solid black;
+}
+
+#table > * td{
+	border: 1px solid black;
+}
+
+#info_row{
+	font-weight: bold;
+}
+
+#first_col{
+	width: 5%;
+}
+
+#second_col{
+	width: 40%;
+}
+
+#third_col{
+	width: 40%;
+}
+
+#fourth_col{
+	width: 15%;
+}
