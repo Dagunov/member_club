@@ -4,14 +4,16 @@
 ## Features
  1. Project is deployed on [heroku](https://members-club-mmah.herokuapp.com/).
  2. Project has [tests](#tests) that cover its main functionality.
- 3. Logging is enabled - all basic log messages, as well as all incoming requests and outgoing responses, are logged to the general.log file.
+ 3. Logging is enabled - all basic log messages, as well as all incoming requests and outgoing responses, are logged to the *general.log* file.
 
 ## Deploy for yourself
  **This chapter will cover required steps to deploy your own member_club locally and on heroku.**
  ### Downloading source code
   To do so, you can use [GitHub Desktop](https://desktop.github.com/), [git command line tool](https://git-scm.com/downloads) or just [download .zip archive](https://github.com/Dagunov/member_club/archive/refs/heads/main.zip) and unpack it on your PC.
   If you choose to use git command line tool, then run following command in target directory:
+
         git clone https://github.com/Dagunov/member_club.git new_folder_name
+
   Where **new_folder_name** is name of the folder that will be created automatically.  
  ### Deploying locally
   As soon as you download source code, you can proceed.
