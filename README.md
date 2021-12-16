@@ -66,10 +66,10 @@
   1. You should complete [all steps](#deploying-locally) necessary to deploy project locally, including [downloading the source code](#downloading-source-code).
   2. While you are in the root folder, run next command:
 
-        py manage.py collectstatic
+            py manage.py collectstatic
 
   3. Now you can run this command to run all tests:
 
-        py manage.py test
+            py manage.py test
 
   3. To view tests, locate *tests.py* file in the *page* folder.
