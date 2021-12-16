@@ -62,7 +62,7 @@
 
 ## Tests
  **This chapter will cover required steps to run tests in this project.**
-  1. You should complete [all steps](###deploying locally) necessary to deploy project locally, including [downloading the source code](###downloading source code).
+  1. You should complete [all steps](#deploying-locally) necessary to deploy project locally, including [downloading the source code](#downloading-source-code).
   2. While you are in the root folder, run next command:
 
         py manage.py collectstatic
