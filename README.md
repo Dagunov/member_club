@@ -21,12 +21,12 @@
    1. [Python](https://www.python.org/downloads/). This project was created with [python-3.9.9](https://www.python.org/downloads/release/python-399/), but last available version should be ok.
    2. Python Django package. To install it you can run next command in your terminal (provided you have python in your PATH):
 
-        pip install Django
+            pip install Django
   #### Steps
    1. Modify project to run locally.
    The only step necessary is to change in file *settings.py* (which is in folder member_club) this line:
 
-         DEBUG = False
+             DEBUG = False
 
    To this line:
 
