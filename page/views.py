@@ -15,7 +15,9 @@ def index(request):
 		form = NewMemberForm(request.POST)
 		if form.is_valid():
 			add_member(Member(form.cleaned_data['name'], form.cleaned_data['email']))
-	form = NewMemberForm()
+			form = NewMemberForm()
+	else:
+		form = NewMemberForm()
 	
 	context = {
 		'members': members,
