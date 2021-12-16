@@ -26,28 +26,28 @@
    1. Modify project to run locally.
    The only step necessary is to change in file *settings.py* (which is in folder member_club) this line:
 
-           DEBUG = False
+          DEBUG = False
 
        To this line:
 
-             DEBUG = True
+          DEBUG = True
 
        If you do not wish to run project on heroku later and won't install *django-heroku* package, you should find and comment out this two lines of code:
 
-             import django_heroku
+          import django_heroku
 
        and
 
-             django_heroku.settings(locals())
+          django_heroku.settings(locals())
    2. Run project.
    Run next command in the project root folder to start your local server:
 
-             py manage.py runserver
+          py manage.py runserver
 
        Your site should be accessible at <http://127.0.0.1:8000/>.
        If you wish to change port or else, you can run next command to view available flags:
 
-             py manage.py runserver --help
+          py manage.py runserver --help
  ### Deploying on heroku
   #### Requirements
    1. [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if you do not have (not local) git repository.
@@ -66,10 +66,10 @@
   1. You should complete [all steps](#deploying-locally) necessary to deploy project locally, including [downloading the source code](#downloading-source-code).
   2. While you are in the root folder, run next command:
 
-            py manage.py collectstatic
+          py manage.py collectstatic
 
   3. Now you can run this command to run all tests:
 
-            py manage.py test
+          py manage.py test
 
   3. To view tests, locate *tests.py* file in the *page* folder.
