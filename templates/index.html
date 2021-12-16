@@ -3,15 +3,22 @@
 {% block title %}Member club{% endblock %}
 {% block content %}
 <h1>Welcome to the Club!</h1>
-<div id="form_container">
-	<form action="/" method="post" id="form">
-		{% csrf_token %}
-		{{ form.as_p }}
-		<div id="form_buttons">
-			<input type="submit" value="Add">
-			<input type="reset" value="Clear">
-		</div>
-	</form>
+<div id="top_container">
+	<div id="form_container">
+		<form action="/" method="post" id="form">
+			{% csrf_token %}
+			{{ form.as_p }}
+			<div id="form_buttons">
+				<input type="submit" value="Add">
+				<input type="reset" value="Clear">
+			</div>
+		</form>
+	</div>
+	<div id="warning_container">
+		If you are viewing this on Heroku, please wait ~10 seconds before adding next member.<br>
+		Due to limitations of free Heroku hosting and this project's requirements, data stored<br>
+		in application memory needs some time to be processed.
+	</div>
 </div>
 <h3>Members</h3>
 <table id="table">
