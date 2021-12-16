@@ -11,6 +11,7 @@ def index(request):
 	logger.info(pretty_request(request))
 
 	global members
+	print(members)
 	if request.method == 'POST':
 		form = NewMemberForm(request.POST)
 		if form.is_valid():
